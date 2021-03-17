@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.line-galery{
+  background: #0816d3; 
+  height: 10px;
+  width: 100%;
+  display: block;
+}
+
+.font-nav{
+  
+    font-size: 35px;   
+    font-family: 'Coda Caption', sans-serif;
+}
+
+.h1-Title {
+  font-family: 'Coda Caption', sans-serif;
+  font-size: 50px;
+  text-align : center;
+}
+
+.h2-subt {
+  font-family: 'Coda Caption', sans-serif;
+  font-size: 30px;
+  text-align : center;
+}
+
+
+
+#art-main{
+  text-align: center;
+  
+}
+
+nav a:hover{
+  color: black;
+}
+
+
+
+
+#galery {
+  border: 5px solid white;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  margin: 30px;
+
+}
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul a {
+    
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin-right: 70px;
+  }
+  
+  .menu a {
+    
+    position: relative;
+    display: block;
+    padding: 5px;
+  }
+  
+  .menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .menu a:hover::before {
+    transform: scaleX(1);
+  }
+
+ 
